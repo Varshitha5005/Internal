@@ -1,0 +1,28 @@
+<html>
+<head>
+<script language='javascript'>
+function validate()
+{
+var u=document.f2.u.value;
+var p=document.f2.p.value;
+if(u=='MVSR' && p=='AIML')
+{
+window.alert('correct password');
+window.open('colourchange.html');
+}
+else
+{
+window.alert('Login Failed');
+}
+}
+</script>
+</head>
+<body>
+<form name='f2'>
+<label><input type='text' name='u'>Name</label>
+<label><input type='password' name='p'>Name</label>
+<input type='button' value='login' onClick='validate()'>
+<input type='reset' value='reset'>
+</form>
+</body>
+</html>
